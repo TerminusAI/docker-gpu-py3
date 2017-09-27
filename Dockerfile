@@ -5,6 +5,7 @@ MAINTAINER Luis Mesas <luis.mesas@intelygenz.com>
 # Update CA Certificates
 RUN apt-get update && \
     apt-get install -y --reinstall \
+        curl \
         ca-certificates && \
     apt-get clean && \
     apt-get autoremove && \
